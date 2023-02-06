@@ -1,14 +1,12 @@
-import { api } from '@/lib/axios'
-import { Button, Heading, MultiStep, Text } from '@ignite-ui/react'
-import { AxiosError } from 'axios'
-import { signIn, useSession } from 'next-auth/react'
 import { useRouter } from 'next/router'
+import { signIn, useSession } from 'next-auth/react'
 import { ArrowRight, Check } from 'phosphor-react'
+import { Button, Heading, MultiStep, Text } from '@ignite-ui/react'
 
 import { Container, Header } from '../styles'
 import { AuthError, ConnectBox, ConnectItem } from './styles'
 
-export default function Register() {
+export default function ConnectCalendar() {
   const router = useRouter()
   const session = useSession()
 
